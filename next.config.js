@@ -1,9 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const path = require('path')
+const withNextIntl = require('next-intl/plugin')();
+
+const nextConfig = withNextIntl({
   eslint: {
     dirs: ["src"],
   },
-
+  
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
   reactStrictMode: true,
   swcMinify: true,
 
@@ -37,6 +43,21 @@ const nextConfig = {
 
     return config;
   },
-};
+  i18n: {
+    locales: ['en-US', 'ar'],
+    defaultLocale: 'en-US',
+    domains: [
+      {
+        domain: 'baraka.com',
+        defaultLocale: 'en-Us'
+      },
+      {
+        domain: 'ar.baraka.com',
+        defaultLocale: 'ar',
+        http: true
+      }
+    ]
+  }
+});
 
 module.exports = nextConfig;
