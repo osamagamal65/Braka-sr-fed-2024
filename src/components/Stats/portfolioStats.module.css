@@ -1,0 +1,12 @@
+.stats{
+    width: 100%;
+    min-height: 1100px;
+    max-height: 1450px;
+    background-image: url('/images/silk-pattern-bg.png');
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 140px;
+}
