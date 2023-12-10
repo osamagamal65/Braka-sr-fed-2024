@@ -1,0 +1,12 @@
+.quote {
+    width: 100%;
+    min-height: 600px;
+    max-height: 750px;
+    background-image: url('/images/pool-bg.png');
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 144px;
+}

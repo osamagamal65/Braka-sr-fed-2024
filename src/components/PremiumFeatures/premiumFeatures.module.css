@@ -1,0 +1,27 @@
+.premium {
+    width: 100%;
+    min-height: 600px;
+    max-height: 700px;
+    background-image: url('/images/black-pattern-bg.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+
+}
+
+.stepper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+}
+
+.stepper::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.10);
+}

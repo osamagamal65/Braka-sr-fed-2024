@@ -1,0 +1,8 @@
+.conclusionImage {
+    background-image: url('/images/conclusion.png');
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display: block;
+    min-height: 730px;
+}
