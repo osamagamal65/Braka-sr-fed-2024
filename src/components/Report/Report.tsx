@@ -4,60 +4,9 @@ import Image from "next/image";
 import reportStyles from "./header.module.css";
 import {} from "@heroicons/react/24/outline";
 import { useFormatter, useLocale, useTranslations } from "next-intl";
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
 
-const data = [
-  {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
+import ReportChart from "./ReportChart";
+import ReportMessage from "./Message";
 
 export default function Report() {
   const locale = useLocale();
@@ -69,7 +18,6 @@ export default function Report() {
   const TwentyYears = yearly * 20;
   const t = useTranslations("forecast");
   const format = useFormatter();
-  const dateTime = new Date();
 
   return (
     <section
@@ -77,6 +25,7 @@ export default function Report() {
       className="flex flex-col items-center justify-center bg-white p-20"
     >
       <main className="flex flex-col items-center justify-center text-center">
+        {/* Section heading */}
         <h1 className=" text-5xl text-black">
           {t("wellDone", { name: "Khalid" })}
           <br />
@@ -116,14 +65,35 @@ export default function Report() {
           {locale === "en" ? "70 years" : "لل ٧٠ سنه القادمه"}
         </p>
       </main>
+
+      {/* Chart Container */}
       <div
-        className="rounded-xl mx-auto my-2 flex flex-col gap-8 border border-slate-300 p-8"
+        className="mx-auto my-2 flex flex-col gap-8 rounded-xl border border-slate-300 p-8"
         style={{
           width: "1160px",
           minHeight: "985px",
+          position: "relative",
         }}
       >
-        <div className="flex flex-col ">
+        <ReportMessage />
+        <div
+          className="flex"
+          style={{
+            position: "absolute",
+            top: "500px",
+            left: "100px",
+          }}
+        >
+          <span className="text-black text-xl">
+            {t("yourGoal")}{" "}
+            {format.number(goal, {
+              style: "currency",
+              currency: locale === "en" ? "USD" : "AED",
+            })}
+          </span>
+        </div>
+        {/* Goals  */}
+        <div className="flex flex-col">
           <h4 className="mb-8 text-4xl font-bold text-black">
             {t("investmentForecast")}
           </h4>
@@ -132,56 +102,24 @@ export default function Report() {
             {format.number(TwentyYears, {
               style: "currency",
               currency: locale === "en" ? "USD" : "AED",
-            })} {" "} {locale === 'en' ? 'Over 20 years' : 'في خلال ٢٠ عام'}
+            })}{" "}
+            {locale === "en" ? "Over 20 years" : "في خلال ٢٠ عام"}
           </h6>
         </div>
+
+        {/* Chart  */}
+
         <div
-          className="chart-container self-center"
+          className="chart-container mt-10 self-center"
           style={{
             height: "512px",
             maxWidth: "850px",
           }}
         >
-          <ResponsiveContainer width="100%" height="100%">
-            <AreaChart
-              width={500}
-              height={400}
-              data={data}
-              margin={{
-                top: 10,
-                right: 30,
-                left: 0,
-                bottom: 0,
-              }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Area
-                type="monotone"
-                dataKey="uv"
-                stackId="1"
-                stroke="#8884d8"
-                fill="#8884d8"
-              />
-              <Area
-                type="monotone"
-                dataKey="pv"
-                stackId="1"
-                stroke="#82ca9d"
-                fill="#82ca9d"
-              />
-              <Area
-                type="monotone"
-                dataKey="amt"
-                stackId="1"
-                stroke="#ffc658"
-                fill="#ffc658"
-              />
-            </AreaChart>
-          </ResponsiveContainer>
+          <ReportChart />
         </div>
+
+        {/* section footer */}
         <footer className="flex flex-col">
           <h6 className="text-2xl text-black">{t("aboutTrailblazer")}</h6>
           <p

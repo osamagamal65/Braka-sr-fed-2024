@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import localFont from "next/font/local";
 import Header from '../../components/Header/Header';
-import Report from '../../components/Report';
+import Report from '../../components/Report/Report';
 import type { Metadata } from "next";
 import "../globals.css";
 import PremiumFeatures from '../../components/PremiumFeatures/PremiumFeatures';

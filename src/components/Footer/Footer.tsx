@@ -9,7 +9,7 @@ export default function Footer() {
     "blog",
     "press",
     "glossary",
-    "faw",
+    "faqs",
     "careers",
     "marketHours",
     "mediaKit",
