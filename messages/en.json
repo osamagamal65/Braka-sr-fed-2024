@@ -1,65 +1,127 @@
 {
-    "header": {
-        "nav": {
-            "getTheApp": "Get the app"
-        },
-        "hero":{
-            "vacation": "vacation",
-            "financialReport": "financial Report {name}",
-            "startInvesting": "Start Investing",
-            "downloadReport": "Download Report"
-        }
+  "title": "Baraka Investment Report",
+  "switchLocale": "Switch to Arabic",
+  "header": {
+    "baraka": "Baraka",
+    "nav": {
+      "getTheApp": "Get the app"
     },
-    "forecast" : {
-        "wellDone": "Well Done {name}",
-        "youHaveSuccessfully": "You Have Successfully Created Your Goal",
-        "weTookAllOfYourInput": "We took all of your inputs and created a plan for you. its pretty simple, to get to {goal, number, currency} savings in the next 70 years you need to invest {yearly, number, currency} and {monthly, number, currency} every month for the next 70 years",
-        "investmentForecast": "Investment Forecast", 
-        "withYourPortfolioYour": "With Your Portfolio Your Wealth Could Grow",
-        "twentyYearsForecast": "{twentyYearsForecast, number, currency}, in 20 years",
-        "onTrack": "On Track",
-        "greatYouWillMost": "Great! You will most Likely your goal within the desired timeframe.",
-        "date": "Date",
-        "favorableMarket": "Favorable Market",
-        "estimatedReturn": "Estimated Return",
-        "unfavorableMarket": "Unfavorable Market",
-        "aboutTrailblazer": "About Trailblazer Portfolio",
-        "letThisPioneer": "Let this pioneer navigate your long-term investment journey. This portfolio offers exposure to the most promising companies and high potential assets classes. It's not for the faint of heart, but in the long run it projects to offer the highest potential returns. This is most suitable for this early in their careers for saving or with goals that reach many years into the future (greater than 7 years)."
-    },
-    "upgrade": {
-        "upgradeToPremium": "Upgrade to Premium \n and Unlock Next \n Quarter's Reports",
-        "supercharge": "Supercharge your financial planning by accessing next quarter's insights and stay one step ahead.",
-        "unlockYour": "Unlock Your Financial Foresight",
-        "diversifyInvestment":"Diversify investments across equities, bonds, and real estate to mitigate risk and promote long-term growth.",
-        "q1": "Q1 2024",
-        "q2": "Q2 2024", 
-        "q3": "Q3 2024"
-    },
-    "assetAllocation": {
-        "assetAllocation": "Asset Allocation", 
-        "toAchieveYour":"To achieve your financial freedom, we've designed an asset allocation strategy that balances risk and growth, guiding your investments toward your retirement and financial goals",
-        "yourPortfolio": "Your Portfolio",
-        "productAllocation": "Product Allocation",
-        "foundName": "Found Name",
-        "ticker": "Ticker",
-        "allocation" : "Allocation",
-        "seeDetails": "See details"
-    },
-    "quote": {
-        "theBestInvestment": "The best investment you can make is in yourself, and a great way to do that is by taking a vacation to refresh your body and mind.",
-        "warrenBuffet": "Warren Buffet"
-    },
-    "actionSteps": {
-        "actionSteps": "Action Steps",
-        "emergencyFunds": "Emergency Funds",
-        "prioritizeBuilding":"Prioritize building an emergency fund with six months' worth of living expenses in a high-yield savings account.",
-        "regularReview": "Regular Review",
-        "periodicallyReview": "Periodically review and rebalance the portfolio to maintain the desired asset allocation.",
-        "retirementAccounts":"Retirement Accounts",
-        "maximizeContributions": "Maximize contributions to 401(k) and IRA accounts to take advantage of tax benefits and long-term growth potential.",
-        "diversifiedPortfolio": "diversified Portfolio",
-        "investInDiversified": "Invest in a diversified mix of individual stocks, ETFs, and mutual funds based on risk tolerance and time horizon.",
-        "collegeSavingPlans": "529 College Saving Plans",
-        "establish529": "Establish 529 plans to save for children's education, taking advantage of potential tax benefits."
+    "hero": {
+      "vacation": "vacation",
+      "financialReport": "Financial Report For \n {name}",
+      "startInvesting": "Start Investing",
+      "downloadReport": "Download Report"
     }
+  },
+  "forecast": {
+    "wellDone": "Well Done {name}.",
+    "youHaveSuccessfully": "You Have Successfully Created Your Goal.",
+    "forecastReport": {
+      "weTookAllOfYourInput": "We took all of your inputs and created a plan for you. its pretty simple, to get \n to",
+      "savingsInTheNext": "savings in the next",
+      "youNeedToInvest": "you need to invest",
+      "and": "and",
+      "everyMonth": "every month",
+      "forTheNext": "for the next ",
+      "recalculate": "Recalculate"
+    },
+    "investmentForecast": "Investment Forecast",
+    "withYourPortfolioYour": "With Your Portfolio Your Wealth Could Grow",
+    "twentyYearsForecast": "{twentyYearsForecast, number, currency}, in 20 years",
+    "onTrack": "On Track",
+    "greatYouWillMost": "Great! You will most Likely your goal within the desired timeframe.",
+    "date": "Date",
+    "favorableMarket": "Favorable Market",
+    "estimatedReturn": "Estimated Return",
+    "unfavorableMarket": "Unfavorable Market",
+    "aboutTrailblazer": "About Trailblazer Portfolio",
+    "letThisPioneer": "Let this pioneer navigate your long-term investment journey. This portfolio offers exposure to the most promising companies and high potential assets classes. It's not for the faint of heart, but in the long run it projects to offer the highest potential returns. This is most suitable for this early in their careers for saving or with goals that reach many years into the future (greater than 7 years)."
+  },
+  "upgrade": {
+    "upgradeToPremium": "Upgrade to Premium \n and Unlock Next \n Quarter's Reports",
+    "supercharge": "Supercharge your financial planning by accessing next quarter's insights and stay one step ahead.",
+    "unlock": "Unlock",
+    "YourFin": " Your Financial Foresight",
+    "diversifyInvestment": "Diversify investments across equities, bonds, and real estate to mitigate risk and promote long-term growth.",
+    "q1": "Q1 2024",
+    "q2": "Q2 2024",
+    "q3": "Q3 2024"
+  },
+  "assetAllocation": {
+    "assetAllocation": "Asset Allocation",
+    "toAchieveYour": "To achieve your financial freedom, we've designed an asset allocation strategy that balances risk and growth, guiding your investments toward your retirement and financial goals",
+    "yourPortfolio": "Your Portfolio",
+    "productAllocation": "Product Allocation",
+    "foundName": "Found Name",
+    "ticker": "Ticker",
+    "allocation": "Allocation",
+    "seeDetails": "See details",
+    "equity": "Equity",
+    "cash": "Cash"
+  },
+  "quote": {
+    "theBestInvestment": "The best investment you can make is in yourself, and a great way to do that is by taking a vacation to refresh your body and mind.",
+    "warrenBuffet": "Warren Buffet"
+  },
+  "actionSteps": {
+    "actionSteps": "Action Steps",
+    "emergencyFunds": "Emergency Funds",
+    "prioritizeBuilding": "Prioritize building an emergency fund with six months' worth of living expenses in a high-yield savings account.",
+    "regularReview": "Regular Review",
+    "periodicallyReview": "Periodically review and rebalance the portfolio to maintain the desired asset allocation.",
+    "retirementAccounts": "Retirement Accounts",
+    "maximizeContributions": "Maximize contributions to 401(k) and IRA accounts to take advantage of tax benefits and long-term growth potential.",
+    "diversifiedPortfolio": "diversified Portfolio",
+    "investInDiversified": "Invest in a diversified mix of individual stocks, ETFs, and mutual funds based on risk tolerance and time horizon.",
+    "collegeSavingPlans": "529 College Saving Plans",
+    "establish529": "Establish 529 plans to save for children's education, taking advantage of potential tax benefits."
+  },
+  "stats": {
+    "yourPortfolioStates": "Your Portfolio Stats",
+    "probabilitySixMonths": "95% probability (6 months)",
+    "protential": "Protential Annual Return",
+    "portfolioYield": "Portfolio Yield",
+    "ifA2013Bull": "If a 2013 bull market were to happen again",
+    "ifA2008Bear": "If a 2008 bear market were to happen again",
+    "topHolding": "Top Holding"
+  },
+  "conclusion": {
+    "conclusion": "Conclusion",
+    "passRate": "Pass Rate",
+    "thisFinancialPlanning": "This financial planning report outlines a customized plan to help John and his family work towards their financial goals. By following the recommended asset allocation and investment strategy, they can achieve financial security, a comfortable retirement, and education savings for their children.",
+    "pleaseNote": "Please note that this is a fictional sample report and should not be used for any actual financial planning purposes. Real financial planning should be done in consultation with a qualified financial advisor to consider individual circumstances and goals.",
+    "download": "Download"
+  },
+  "promotion": {
+    "getTheMostFrom": "Get the Most from Your Personalized Monthly Financial Report",
+    "unlockFull": "Unlock Full Personalized Financial Report",
+    "upToInsurance": "insurance up to 500K$",
+    "hasReturned": "Has Returned 10% a Year Over the Last 30 Years",
+    "weProcessYour": "We Process Your Data Securely With XX Bit Encryption",
+    "regulatedBy": "Regulated \n by the DFSA"
+  },
+  "footer": {
+    "company": "Company",
+    "aboutUs": "About Us",
+    "support": "Support",
+    "blog": "Blog",
+    "press": "Press",
+    "glossary": "Glossary",
+    "faqs": "FAQs",
+    "careers": "Careers",
+    "marketHours": "Market Hours",
+    "mediaKit": "Media Kit",
+    "english": "English",
+    "arabic": "العربيه",
+    "products": "Products",
+    "features": "Features",
+    "stocks": "Stocks",
+    "news": "News",
+    "learn": "Learn",
+    "legalAndRegulatory": "Legal & Regulatory",
+    "termsAndConditions": "Terms & Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "disclosures": "Disclosures",
+    "rightReservedStatement": "© baraka financial limited. All rights reserved.\n Baraka Financial Limited (“Baraka”) is registered in the Dubai International Financial Centre (“DIFC”) and is regulated by the Dubai Financial Services Authority (“DFSA”). It holds a Category 4 license with the permission of Arranging Deals in Investments, with a Retail endorsement. However, Baraka is not authorised to hold, nor control, client assets or money. Therefore, the client money rules are not applicable to the business currently undertaken by Baraka. Baraka is a wholly owned subsidiary of Baraka Technology Holding in Abu Dhabi Global Market. \n Baraka does not provide any trading or investment advice and shall not be responsible for any loss arising from any investment based on any general information provided by Baraka or as may be available on Baraka’s website and other web-based services (collectively, the “Website Services“). Your investment can fluctuate, so you may get back less than you invested. Baraka does not warrant that the information is accurate, reliable or complete or that the supply will be without interruptions. Any third party information provided through does not reflect the views of Baraka. \n The content of the Website Services provided by Baraka is only intended to provide you with general information and is neither an offer to sell nor a solicitation of an offer to purchase any security and may not be relied upon for investment purposes. Any commentaries, articles, daily news items, public and/or private chat publications, stock analysis and/or other information contained in the Website Services should not be considered investment advice. \n Baraka shall not be liable for any delay, inaccuracy, error or omission of any kind in the information provided by Baraka and/or any third party information provider or for any resulting loss or damage you may suffer as a result of or in connection with the information supplied by Baraka and/or any third party information provider. In addition, Baraka shall have no liability for any losses arising from unauthorized access to information or any other misuse of information. \n Any opinions, news, research, analysis, prices, or other information contained on our Website Services, or emailed to you, are provided as general market commentary, and do not constitute investment advice. Baraka will not accept liability for any loss or damage, including, without limitation, for any loss of profit which may arise directly or indirectly from use of or reliance on such information. Each decision as to whether an investment is appropriate or proper is an independent decision by you. You agree that Baraka has no fiduciary duty to you and is not responsible for any liabilities, claims, damages, costs and expenses, including attorneys’ fees, incurred in connection with you following Baraka’s generic investment information. Baraka makes no representations as to whether a particular investment is appropriate or suitable for you. \n Baraka provides traditional securities and does not intend to engage a Shariah advisor or obtain a fatwa regarding Shariah screened securities. Baraka does not have an Islamic Window endorsement from the DFSA. Clients should be aware that Shariah screened stocks may involve additional risks and costs. There can be no assurance as to the Shariah compliance of the securities listed by Baraka. Clients are reminded that views on Shariah compliance differ and that they should obtain their own independent advice as to the permissibility of a security."
+  }
 }

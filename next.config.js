@@ -43,21 +43,6 @@ const nextConfig = withNextIntl({
 
     return config;
   },
-  i18n: {
-    locales: ['en-US', 'ar'],
-    defaultLocale: 'en-US',
-    domains: [
-      {
-        domain: 'baraka.com',
-        defaultLocale: 'en-Us'
-      },
-      {
-        domain: 'ar.baraka.com',
-        defaultLocale: 'ar',
-        http: true
-      }
-    ]
-  }
 });
 
 module.exports = nextConfig;
