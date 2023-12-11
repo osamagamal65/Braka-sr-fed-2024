@@ -25,3 +25,19 @@ run the following commands
 ```bash
 npm run build
 ```
+
+## :sparkles: You Can Open the app from this link :sparkles:
+##### This is a magic link that gets updated whenever we change something on the main branch (Simple CI/CD flow).
+[The link for the magic is here](https://braka-sr-fed-2024.vercel.app/en)
+[The link for the magic is here](https://braka-sr-fed-2024.vercel.app/en)
+[The link for the magic is here](https://braka-sr-fed-2024.vercel.app/en)
+[The link for the magic is here](https://braka-sr-fed-2024.vercel.app/en)
+[The link for the magic is here](https://braka-sr-fed-2024.vercel.app/en)
+[The link for the magic is here](https://braka-sr-fed-2024.vercel.app/en)
+```javascript
+const author= "Osama Gamal";
+const date = new Date(2023, 12, 11);
+const message = `${author} has worked on this challenge for Baraka at ${date.toString()} `
+```
+:rocket: :rocket:
+:rocket:
