@@ -1,5 +1,10 @@
 import { useTranslations } from "next-intl";
 import quoteStyle from "./quote.module.css";
+import { Cormorant } from "next/font/google";
+const roboto = Cormorant({
+  weight: '600',
+  subsets: ['latin'],
+})
 export default function Quote() {
   const t = useTranslations("quote");
 
@@ -20,13 +25,12 @@ export default function Quote() {
             />
           </svg>
         </span>
-        <h6
-          className="quote text-start"
+        <h6 className={roboto.className + " quote text-start"}
           style={{
             fontSize: "64px",
-            fontWeight: "500",
+            fontWeight: "400",
             lineHeight: "72px",
-            fontFamily: "Cormorant"
+            // fontFamily: "Cormorant"
           }}
         >
           {t("theBestInvestment")}
