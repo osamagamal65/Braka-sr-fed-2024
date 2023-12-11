@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import localFont from "next/font/local";
 import Header from "../../components/Header/Header";
 import Report from "../../components/Report/Report";
-import type { Metadata } from "next";
 import "../globals.css";
 import PremiumFeatures from "../../components/PremiumFeatures/PremiumFeatures";
 import AssetAllocations from "../../components/Assets/AssetAlocation";
@@ -13,12 +12,14 @@ import PortfolioStates from "@/components/Stats/PortfolioStats";
 import Conclusion from "@/components/Conclusion/Conclusion";
 import Promotion from "@/components/Promotion/Promotion";
 import Footer from "@/components/Footer/Footer";
+import type { Metadata } from "next";
 
 const proximaNovaFont = localFont({
   src: "../../../public/fonts/Proxima-Nova-Font.otf",
   display: "swap",
   variable: "--font-proxima",
 });
+
 export default async function LocaleLayout({ children, params: { locale } }) {
   let messages;
   try {

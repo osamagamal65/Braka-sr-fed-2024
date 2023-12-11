@@ -7,7 +7,9 @@ export default function Conclusion() {
     <section>
       <div className="grid lg:grid-cols-2">
         <div className="bg-white px-32 py-24">
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6" style={{
+            maxWidth: "490px"
+          }}>
             <svg
               width="141"
               height="140"
